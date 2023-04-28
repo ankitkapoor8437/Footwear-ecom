@@ -312,10 +312,63 @@ header .action a i {
   justify-content: space-between;
 }
 
+.featured .product .desc {
+  padding: 24px 0;
+}
+
+.featured .product .desc h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+
+.featured .product .desc p {
+  font-size: 18px;
+}
+
+.featured .product .desc .btn-line {
+  margin-top: 40px;
+  position: relative;
+}
+
+.featured .product .desc .btn-line:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: var(--clr-black);
+
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s all;
+}
+
+.featured .product .desc .btn-line:hover::after {
+  width: 70px;
+}
+
+.featured .product .placeholder {
+  width: 45%;
+  transition: 0.3s all;
+}
+
+.featured .product:hover .placeholder {
+  transform: scale(1.1);
+}
+
+
+
+
 
 @media screen and (min-width:750px) {
   .featured .content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured .content .product:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
