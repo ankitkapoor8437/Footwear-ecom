@@ -290,6 +290,36 @@ header .action a i {
 
 /* featured product style 
 ----------++----------++---------- */
+.featured {
+  padding: 24px 24px 0px;
+}
+
+
+.featured .content {
+  width: 100%;
+  display: grid;
+  gap: 24px;
+}
+
+.featured .product {
+  background-color: #f0f0f0;
+  background-image: url(/img/featured-background.jpg);
+  padding: 32px;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media screen and (min-width:750px) {
+  .featured .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 
 /* new arrivals section style 
 ----------++----------++---------- */
