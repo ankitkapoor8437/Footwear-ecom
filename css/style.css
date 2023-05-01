@@ -622,7 +622,7 @@ header .action a i {
 }
 
 
-.services .container .box{
+.services .container .box {
   color: var(--clr-black);
   display: grid;
   gap: 12px;
@@ -630,6 +630,46 @@ header .action a i {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
+@media screen and (min-width: 600px) {
+  .services .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    padding: 90px 0px 0px;
+  }
+
+  .services .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.services .container .box .icon {
+  font-size: 32px;
+  position: relative;
+}
+
+.services .container .box .icon:after {
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #646464;
+
+  position: absolute;
+  left: 50px;
+}
+
+.services .container .box .content h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+
+
 
 /* newsletter section style 
 ----------++----------++---------- */
